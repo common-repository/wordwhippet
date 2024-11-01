@@ -1,0 +1,116 @@
+#header_icon {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px 3px 10px 3px;
+    padding: 6px 8px 0;
+    height: 32px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.options_wrapper {
+    margin-top: 10px;
+    columns: 2;
+}
+
+.options_box {
+    padding: 12px 5px;
+    break-inside: avoid;
+}
+
+.options_box_inner {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.options_box h2 {
+    margin-top: 0;
+}
+
+.options_box label,
+.options_box input {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.options_box input[type=checkbox] {
+    position: relative;
+    top: 2px;
+}
+
+.options_box .note {
+    color: rgba(0,0,0,0.5);
+}
+
+#js_dont_async,
+#js_dont_defer {
+    display: none;
+    margin-top: 10px;
+}
+
+.options_box input[type=text] {
+    width: 100%;
+}
+
+#wrdwpt_opt_rev_num {
+    display: none;
+    margin-top: 10px;
+}
+
+#dont_remove_query_strings {
+    display: none;
+    margin-top: 10px;
+}
+
+#enable_hotlink_urls {
+    display: none;
+    margin-top: 10px;
+}
+
+#wrdwpt_footer {
+    text-align: center;
+    margin-top: 30px;
+    background: rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 40px;
+    position: relative;
+    left: -20px;
+    margin-bottom: -80px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+#wrdwpt_footer h1 {
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 1.6em;
+}
+
+#wrdwpt_footer p:last-of-type {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 782px) {
+    .options_wrapper {
+        columns: 1;
+    }
+    #wrdwpt_footer {
+        width: 100vw !important;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-left: none;
+    }
+    #wpbody-content {
+        padding-bottom: 0;
+    }
+    #wrdwpt_footer p:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
